@@ -49,5 +49,9 @@ public class PacienteController {
         pacienteService.deletePaciente(id);
         return "El paciente se borro correctamente";
     }
-
+    
+    @GetMapping("/traerdni/{dni}")
+    public Paciente traerPacienteDni(@PathVariable String dni) {
+        return pacienteService.findPacienteDni(dni);
+    }
 }

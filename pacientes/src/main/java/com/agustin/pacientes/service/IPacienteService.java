@@ -14,4 +14,6 @@ public interface IPacienteService {
     public void editPaciente(Paciente paciente);
 
     public void deletePaciente(Long id);
+
+    public Paciente findPacienteDni(String dni);
 }
